@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">List of Dishes and Beverages</string>
+    <string name="title1">Noodles</string>
+    <string name="title2">Fried Rice</string>
+    <string name="title3">Idli and Vada</string>
+    <string name="title4">Paneer Tikka</string>
+    <string name="title5">Poori</string>
+    <string name="title6">Masala Soda</string>
+    <string name="title7">Pineapple Mojito</string>
+    <string name="title8">Mango Milkshake</string>
+    <string name="title9">Oreo Milkshake</string>
+    <string name="title10">Masala Lassi</string>
+</resources>
