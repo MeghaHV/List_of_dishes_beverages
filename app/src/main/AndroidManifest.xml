@@ -10,6 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ListOfDishes">
         <activity
+            android:name=".details.detailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".details.MasalaLassi"
+            android:exported="false" />
+        <activity
+            android:name=".details.OreoMilkshake"
+            android:exported="false" />
+        <activity
+            android:name=".details.MangoMilkshake"
+            android:exported="false" />
+        <activity
+            android:name=".details.PineappleMojito"
+            android:exported="false" />
+        <activity
+            android:name=".details.MasalaSoda"
+            android:exported="false" />
+        <activity
+            android:name=".details.Poori"
+            android:exported="false" />
+        <activity
+            android:name=".details.PaneerTikka"
+            android:exported="false" />
+        <activity
+            android:name=".details.IdliVada"
+            android:exported="false" />
+        <activity
+            android:name=".details.FriedRice"
+            android:exported="false" />
+        <activity
+            android:name=".details.Noodles"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
