@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val intent= Intent(this,detailsActivity::class.java)
         intent.putExtra("ingredients",listOfDishesBeverages.ingredients)
         intent.putExtra("description",listOfDishesBeverages.description)
+        intent.putExtra("image",listOfDishesBeverages.image)
         startActivity(intent)
     }
     }
