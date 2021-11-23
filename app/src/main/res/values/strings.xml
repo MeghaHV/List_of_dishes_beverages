@@ -16,4 +16,26 @@
     <string name="paneer_tikka_details">Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India and countries with an Indian diaspora.</string>
     <string name="poori_details">Poori is a deep-fried bread made from unleavened whole-wheat flour that originated in the Indian subcontinent. It is eaten for breakfast or as a snack or light meal. It is usually served with a savory curry or bhaji, as in puri bhaji, but may also be eaten with sweet dishes.</string>
     <string name="masala_soda_details">Nimbu Masala Soda also known as Banta, Batli Soda, Goli Soda or Goti Soda (Goti means small marble ball) lots of other name. Nimbu Masala Soda is an informal term for a carbonated lemon flavored soft drink. It is very popular in India.</string>
+    <string name="ingredients">
+        1. 1 cup old fashioned or steel cut oatmeal\n
+        2. 2 cups almond milk\n
+        3. 1 apple thinly sliced then cut into thirds basically thin bite sized pieces\n
+        4. 2 teaspoons cinnamon\n
+        5. 2 teaspoons maple syrup optional\n
+        6. 1 cup unsweetened apple sauce if you have the little cups each is 1/2 cup\n\n</string>
+    <string name="description">
+        In a medium sauce pan combine the almond milk, oatmeal, cinnamon and maple syrup, heat on low until most of the milk is absorbed (stir as needed).
+        Once most of the milk is absorbed add in the apple sauce and stir together. If you like your apples soft add them in now too, if you like some crunch wait until you are about to serve to stir in.
+        Once all the apple sauce and milk is absorbed, about 15-20 minutes total, remove from heat and serve.</string>
+    <string name="ingredients1">
+        1. 1 cup old fashioned or steel cut oatmeal\n
+        2. 2 cups almond milk\n
+        3. 1 apple thinly sliced then cut into thirds basically thin bite sized pieces\n
+        4. 2 teaspoons cinnamon\n
+      </string>
+    <string name="description1">
+        In a medium sauce pan combine the almond milk, oatmeal, cinnamon and maple syrup, heat on low until most of the milk is absorbed (stir as needed).
+        Once most of the milk is absorbed add in the apple sauce and stir together. If you like your apples soft add them in now too, if you like some crunch wait until you are about to serve to stir in.</string>
+    <string name="ingredientsTitle">Ingredients</string>
+    <string name="descriptionTitle">Description</string>
 </resources>

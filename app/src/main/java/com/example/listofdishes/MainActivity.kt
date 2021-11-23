@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listofdishes.adapter.ItemAdapter
 import com.example.listofdishes.data.Datasource
@@ -21,8 +22,9 @@ class MainActivity : AppCompatActivity() {
         val itemAdapter = ItemAdapter(this,myDataset)
         recyclerView.adapter = itemAdapter
         val clickListener:ItemAdapter.ClickListener=object:ItemAdapter.ClickListener{
-            override fun onItemClick(view: View, listOfDishesBeverages: ListOfDishesBeverages) {
-                launchDetailActivity(listOfDishesBeverages)
+            override fun onItemClick(view: View, position:Int) {
+                val dish=itemAdapter.getdish(position)
+                launchDetailActivity(dish)
             }
         }
         recyclerView.setHasFixedSize(true)
@@ -33,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun launchDetailActivity(listOfDishesBeverages: ListOfDishesBeverages){
         val intent= Intent(this,detailsActivity::class.java)
-        intent.putStringArrayListExtra("ingredients",listOfDishesBeverages.ingredients)
-        intent.putStringArrayListExtra("steps",listOfDishesBeverages.steps)
+        intent.putExtra("ingredients",listOfDishesBeverages.ingredients)
+        intent.putExtra("description",listOfDishesBeverages.description)
         startActivity(intent)
     }
     }

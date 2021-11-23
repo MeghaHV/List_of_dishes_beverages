@@ -21,7 +21,7 @@ class ItemAdapter(private val context: Context,
     private lateinit var clickListener: ClickListener
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.item_title)
-        val imageView: AppCompatImageButton = view.findViewById(R.id.item_image)
+        val imageView: ImageView = view.findViewById(R.id.item_image)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -34,6 +34,9 @@ class ItemAdapter(private val context: Context,
         val item = dataset[position]
         holder.textView.text = context.resources.getString(item.stringResourceId)
         holder.imageView.setImageResource(item.imageResourceId)
+        holder.itemView.setOnClickListener{
+            clickListener.onItemClick(it,position)
+        }
 
     }
     override fun getItemCount() = dataset.size
@@ -43,7 +46,7 @@ class ItemAdapter(private val context: Context,
     }
 
     interface ClickListener{
-        fun onItemClick(view:View, listOfDishesBeverages: ListOfDishesBeverages)
+        fun onItemClick(view:View, position: Int)
     }
 
     fun getdish(position:Int): ListOfDishesBeverages{
