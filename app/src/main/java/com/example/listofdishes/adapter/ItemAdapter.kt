@@ -12,11 +12,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.listofdishes.MainActivity
 import com.example.listofdishes.R
 import com.example.listofdishes.details.detailsActivity
+import com.example.listofdishes.model.Dish
 import com.example.listofdishes.model.ListOfDishesBeverages
 
 
 class ItemAdapter(private val context: Context,
-                  private val dataset: List<ListOfDishesBeverages>
+                  private val dataset: ArrayList<Dish>
 ): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     private lateinit var clickListener: ClickListener
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
@@ -32,8 +33,8 @@ class ItemAdapter(private val context: Context,
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView.text = context.resources.getString(item.stringResourceId)
-        holder.imageView.setImageResource(item.imageResourceId)
+        holder.textView.text = item.name
+        holder.imageView.setImageResource(R.drawable.image01)
         holder.itemView.setOnClickListener{
             clickListener.onItemClick(it,position)
         }
@@ -49,7 +50,7 @@ class ItemAdapter(private val context: Context,
         fun onItemClick(view:View, position: Int)
     }
 
-    fun getdish(position:Int): ListOfDishesBeverages{
+    fun getdish(position:Int): Dish{
         return dataset[position]
     }
 
